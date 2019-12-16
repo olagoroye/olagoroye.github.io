@@ -1,11 +1,11 @@
 # Site settings
-author: olusola olagoroye
-title: 
+author: Olusola Olagoroye
+title: Becoming  a Developer
 header-img: img/home-bg.png
 email: solaolagoroye@gmail.com
-copyright_name: olusola olagoroye
+copyright_name: Olusola Olagoroye
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Making a Change and Loving the Big Picture
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  olagoroye
