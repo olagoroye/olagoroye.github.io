@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "My First Feel Programming"CLI PROJECT""
-date:       2020-01-16 04:38:12 +0000
+title:      "My First Feel of Programming"CLI PROJECT""
+date:       2020-01-15 23:38:13 -0500
 permalink:  my_first_feel_programming_cli_project
 ---
 
