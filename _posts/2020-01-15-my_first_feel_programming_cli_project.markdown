@@ -38,4 +38,4 @@ my CLI class looks has this =>
 Inside the Cli classes is instace method start and information which is called and it also collaborate with another class from my program to output all the information..
 
 
-I will update this blog after i make a walkthrough video of my  project. I hope  you enjoy reading this. 
+Here is a walkthrougth of my codes  https://www.youtube.com/watch?v=Fd56CRKgq7o&feature=youtu.be. I hope  you enjoy reading this. 
