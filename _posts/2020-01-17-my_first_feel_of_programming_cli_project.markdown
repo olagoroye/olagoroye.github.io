@@ -1,41 +1,71 @@
 ---
 layout: post
-title:      "My First Feel of Programming"CLI PROJECT""
-date:       2020-01-17 10:29:50 +0000
+title:      "Sinatra Application  "
+date:       2020-01-17 05:29:51 -0500
 permalink:  my_first_feel_of_programming_cli_project
 ---
 
 
-The is my first major test of knoweledge to programming and I can say without a doubt that it was exhausting , because it entails putting in all I have learnt  in the last 4-5 weeks together into a readable program .  
-Just before starting  I realise I would need to set up my local enviroment (this took a while before I could get it working ). One major issue I had was understanding my commands , which i am not confident about yet but I'm getting there. Starting up my project I ran into major issues like making a repo on my github account linking it to my project on the text editor work around  was an hassle , had several meltdown but I kept on trying, till I was able fix it , this gave me a certain level of joy and confident of the ability to read error and work my way through.
 
-I started with creating my repo , I moved on to starting my project(which is based on DOG BREED) starting with setting all of my bin (executable file), then the enviroment.rb(this is where I require all of the  classes  built in my directory) and it looks like this  => 
+Prior to starting this project , I had this feeling of excitement about creating an app for the first time although this feeling didn't last too long but I am glad I made it through .  I had ideas of what I wanted my app to look like and it felt really good knowing what you wanted to see and the result. So I will breakdown each moment of this project, just before i forget,I asked for help as much as I needed and I also got confused alot of time because due date was coming up and I was getting nervous .
 
-                        require "nokogiri"
-                        require "open-uri"
-                        require "pry"
+**** Creating and Populating Database
+
+With the help of corneal it was easy to start up, as I didn't have to start building from the scratch and incoporating all of the gems needed , all I needed to run was just bundle install  and shotgun - just to make sure all of my gem was working accordingly.
+
+Getting my migration table right seems pretty easy but I had a hard time getting it together , but along the way I learnt about various command I could use , at first I was adding to my table just to get the migration to work, all together I had alot of unnecessay table, this made my migration folder look a little  busy and I was getting confused btween 
+Here are some of the command that were helpful and handy 
+         rake db:drop  this help drop my database completely and I could just make changes manually and continue (but this isn't a good practice).  and run my rake db:migrate
+				    rake db:reset 
+						rake db:migrate VERSION=0
+All these are good but I just advise to be patient when building your app , don't try to over do it, you may end up getting stuck and having to change your mind (this happened to me while working this project . I lost my train of thought and wasn't sure what I wanted . I was too scared ! and each time I ran my localhost I didn't want to see errors) .
+
+Finally, I aso seeded my database , this helped alot with testing my app.  I got this going and I moved on to creating my models and the associations , with the validations and uniqueness just has the project requirement specified .
+
+**** Controllers & Views
+
+The controllers and View I taught okay Olusola you got this , since I had just learnt the conventions of the Route(what  I needed to feed my block to make it  render or redirect ) I was certain this shouldn't take alot of time but at last ,I spent days trying to figure alot of things (this is also because I have to care for my three babies , I had to divide my time inbetween ).
+
+The route didn't give me alot of issue but I had alot of syntax error in my views. Specifically my show.erb and edit.erb.
+show.erb looks like this now 
+
+                   <h3><%= @report.date %></h3>
+
+                  <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">Comments: <%= @report.comment %></li>
+  
+ 
+               <li class="list-group-item">Due_date: <%= @report.due_date %></li>
+
+ 
+              <li class="list-group-item">User_id: <%= @report.user_id %></li>
+							
+              <li class="list-group-item">subjects: <%= @report.subjects %></li>
 
 
-                       require_relative "./breed_dogs/version"
-                       require_relative "./breed_dogs/cli"
-                       require_relative "./breed_dogs/scraper"
-                       require_relative "./breed_dogs/dogbreed"
-											 
-All of the information provided in the block above came after each of the classes was define . I got stuck several times , at a point i didn't understand what my error was wanting me todo , but i knew error was coming  from my gemSpec which i had to comment out with the help of my Cohort lead (Mr Howard)but he said I could still work it out but for the sake of my project and time - i decided to keep that out .
+              </ul>
+On this render page I had to add the class variable infront @report to my attribute before i was able to get the create report to display.
 
+I had to do the same thing calling class variable on the attribute again for my edit page . One interesting thing I learnt about was this method my cohort lead(Howard)showed me , the date on my edit page wasn't populating , I was going to leave it as that because I was tired but this method fixed the worry
 
-Scraping was another thing that gave me alot of issues. This took alot of video watching and lab but then-- hmmm!!!
+ <input type="date" name="report[date]" value="<%= @report.date.strftime("%Y-%m-%d") %>">
+ 
+ so .strftime  was callded on @report.date and this was helpful , that way the user don't have to keep track / make mistake on the actaul date report was created, and can just edit report. 
+ 
+I finally wrapped it up with the the delete route and got my delete form working and other user will not be able to able to edit/delete report that doesn't belong to them.
+ 
+All of this I wouldn't say I am confident yet , I am just learning as this is my first attempt at logical thinking and creating a web application, but I am excited to know you could give computer command and it would listen to you .
 
-what then is Scraping : scraping is a technique used to grab data out of the HTML that makes up a web page. So I scraped a dogbreed website (I got alot of help from my cohort professor learning this - I am not all round confident just yet but I am getting there. For the sake of my project didn't want to play around too much) using the nokogiri and open- uri to get data from the website I choose (dogtime.com). which I was able to convert to object which enable me start working on my CLI class . 
-This Cli  may not interest everyone has it just a method calling different dog bred name with their url and user is also able to read the information about the dogs . This took me about 24 hours to figure it out and to get it working and making sure my codes was responding to command and not breaking.
-my CLI class looks has this =>
-                                class Cli 
-                                         def call
-                                          start
-                                         information
-                                         end
-																 end
-Inside the Cli classes is instace method start and information which is called and it also collaborate with another class from my program to output all the information..
-
-
- These project gave me alot of  meltdown but i am glad I pulled through . I hope  you enjoy reading this.  
+I will be posting a link to the video walkthrough of my code , hopefully you can get something out of it. I am just a work in progress hoping to be the best as time goes on .
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
