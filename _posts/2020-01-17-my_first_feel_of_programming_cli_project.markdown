@@ -35,7 +35,8 @@ The controllers and View I taught okay Olusola you got this , since I had just l
 The route didn't give me alot of issue but I had alot of syntax error in my views. Specifically my show.erb and edit.erb.
 show.erb looks like this now 
 
-                  ```
+              ```
+
                <h3><%= @report.date %></h3>
 
                   <ul class="list-group list-group-flush">
@@ -53,6 +54,7 @@ show.erb looks like this now
 
               </ul>
 ```
+
 
 On this render page I had to add the class variable infront @report to my attribute before i was able to get the create report to display.
 
