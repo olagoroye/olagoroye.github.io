@@ -36,7 +36,7 @@ The route didn't give me alot of issue but I had alot of syntax error in my view
 show.erb looks like this now 
 
            
-  ```
+ 
 
                <h3><%= @report.date %></h3>
 
@@ -54,7 +54,7 @@ show.erb looks like this now
 
 
               </ul>
-```
+
 
 
 On this render page I had to add the class variable infront @report to my attribute before i was able to get the create report to display. I had to do the same thing calling class variable on the attribute again for my edit page . One interesting thing I learnt about was this method my cohort lead(Howard)showed me , the date on my edit page wasn't populating , I was going to leave it as that because I was tired but this method fixed the worry
