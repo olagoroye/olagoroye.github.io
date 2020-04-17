@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "JavaScript and Rails Project "
-date:       2020-04-17 03:37:13 +0000
+date:       2020-04-16 23:37:14 -0400
 permalink:  javascript_and_rails_project
 ---
 
@@ -26,6 +26,8 @@ JavaScript is someworth interesting! What then is Front-End Web Programming?  It
                       1. Recognize Events
                       2. Manipulate the DOM
                       3. Communicate with the Server
- Understanding the above is very much important towards your sucess in this module .  You also want to pay close attention to the object orientation, as you will be needing it to write your codes , which wil make it easy to read and resuable . My project isn't close to perfect but  I got all the necessary functionality working to meet the requirement , looking forward to being a better developer . I will be dropping a link to my project here later .. I hope you got a hint here for your project has well.
+                      
+											
+Understanding the above is very much important towards your sucess in this module .  You also want to pay close attention to the object orientation, as you will be needing it to write your codes , which wil make it easy to read and resuable . My project isn't close to perfect but  I got all the necessary functionality working to meet the requirement , looking forward to being a better developer . I will be dropping a link to my project here later .. I hope you got a hint here for your project has well.
 
 
