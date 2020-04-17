@@ -23,9 +23,9 @@ FRONTEND (JAVASCRIPT)
 
 JavaScript is someworth interesting! What then is Front-End Web Programming?  It is creating documents with HTML and styling /positioning the document's content with CSS stylying. It also  uses JavaScript to provide interactinity and notify remote servers . There is actually the three pillar of web programming , If you can take your time to learn this communication , you will always get the eureka moment of JavaScipt and Rails . I haven't experienced this though , has this is my very first time getting to ever work on JavaScript . Here is the three pillar of web-programming:
 
-                      1. Recognize Events
-                      2. Manipulate the DOM
-                      3. Communicate with the Server
+*                        Recognize Events
+*                       Manipulate the DOM
+*                       Communicate with the Server
                       
 											
 Understanding the above is very much important towards your sucess in this module .  You also want to pay close attention to the object orientation, as you will be needing it to write your codes , which wil make it easy to read and resuable . My project isn't close to perfect but  I got all the necessary functionality working to meet the requirement , looking forward to being a better developer . I will be dropping a link to my project here later .. I hope you got a hint here for your project has well.
